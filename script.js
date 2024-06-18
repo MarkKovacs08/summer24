@@ -10,7 +10,7 @@ m.onclick = function(){
   //}
   // else {
   //   document.querySelector("button").innerHTML ="Click for more";
-  //   document.querySelector("ul").removeChild(ol.lastElement)
+  //   document.querySelector("ul").removeChild(document.querySelector("ul").lastElementChild);
   // }
 };
 l.onclick = function(){
