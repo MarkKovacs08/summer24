@@ -6,13 +6,20 @@ x.appendChild(text);
 m.onclick = function(){
   //if(document.querySelector("button").innerHTML == "Click for more"){
     //document.querySelector("button").innerHTML ="Click for less";
+    if(document.querySelector("ul").childElementCount == 5){
+      alert("No more to add");
+    }
     document.querySelector("ul").appendChild(x);
+
   //}
-  // else {
-  //   document.querySelector("button").innerHTML ="Click for more";
-  //   document.querySelector("ul").removeChild(document.querySelector("ul").lastElementChild);
-  // }
+  //else {
+     //document.querySelector("button").innerHTML ="Click for more";
+     //document.querySelector("ul").removeChild(document.querySelector("ul").lastElementChild);
+   //}
 };
 l.onclick = function(){
-  document.querySelector("ul").removeChild(document.querySelector("ul").lastElementChild);
-};
+  if(document.querySelector("ul").childElementCount == 4){
+    alert("No more to take away");
+  }
+   document.querySelector("ul").removeChild(x);
+ };
